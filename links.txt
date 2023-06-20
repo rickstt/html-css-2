@@ -1,0 +1,6 @@
+Nome da página                                  Links
+Home                                            index.html
+Sobre nós                                       sobre-nos.html
+Cardápio                                        cardapio.html
+Contato                                         contato.html
+carrinho                                        checkout.html
