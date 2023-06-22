@@ -6,6 +6,12 @@ todas as tags html e fazer uma formatação para retirar as margens */
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
  /* Aplicação de altura e plano de fundo ao header. 
 Vamos colocar uma imagem como plano de fundo */
 header {
@@ -13,6 +19,7 @@ header {
     background-image: url("../img/cafe2.jpg");
     background-size: 100%; 
     background-position: 0 -100px; /*Posição do plano de fundo onde o primeiro valor é x, ou seja horizontal e o segundo valor é y (vertical).*/
+    filter: saturate(1) blur(0.1px);
 }
 header nav {
     background-color: rgba(0, 0, 0, 0.6);
@@ -20,10 +27,10 @@ header nav {
     text-align: center;
 }
 header nav a {
-    font-family: 'Quicksand', sans-serif;
     font-size: 12pt;
     text-decoration: none;
     color: white;
+    transition: all 0.2s ease-in;
 }
 header nav ul {
     list-style: none; /* remover os marcadores */
@@ -33,7 +40,6 @@ header nav ul {
 }
 header nav ul li {
     flex: 1;
-    border: 0px solid pink;
 }
 header nav ul li img {
     height: 85px;
@@ -49,4 +55,64 @@ header nav ul li img {
 nav ion-icon {
     width: 40px;
     height: 40px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(211, 211, 211, 0.692);
+}
+.em-linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uma-fracao{
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+}
+.img-parceiros {
+    width: 100px;
+    height: 40px;
+    filter: invert(0.5) blur(0.1px);
+    margin: 10px;
+}
+ul li a img {
+    object-fit: scale-down;
+}
+footer ul {
+    list-style: none;
+
+}
+footer a {
+    text-decoration: none;
+    color: rgba(211, 211, 211, 0.692);
+    transition: all 0.2s ease-in;
+}
+.uma-fracao p{
+    font-size: 13pt;
+}
+.uma-fracao ion-icon {
+    width: 23px;
+    height: 23px;
+    margin: 10px;
+}
+.end-footer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10.5pt;
+    transition: all 0.2s ease-in;
+}
+
+/*Efeitos hover nos links*/
+header nav ul li a:hover {
+    color: rgb(175, 105, 77);
+}
+.img-parceiros:hover {
+    filter: invert(0.5) sepia(1);
+}
+
+.end-footer a:hover, footer a:hover{
+    color: rgba(255, 255, 255, 0.89);
 }
