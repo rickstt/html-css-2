@@ -268,6 +268,53 @@ section .uma-fracao ion-icon {
 .margem-top-base {
     margin: 30px 0px;
 }
+.tirar-marcador {
+    list-style: none;
+}
+.cat-cardapio {
+    padding: 15px 15px;
+    border: 1px solid silver;
+    border-radius: 40px;
+    margin: 10px 10px;
+    box-shadow: 0 2px 2px rgba(33,33,33,.1);
+}
+.cat-cardapio a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cat-cardapio ion-icon {
+    color: rgb(196, 112, 34);
+    width: 20px;
+    height: 20px;
+    padding-right: 8px;
+}
+.itens-cardapio {
+    transition: box-shadow .3s;
+    width: 250px;
+    height: 310px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    margin: 20px;
+    padding: 10px;  
+    cursor: pointer;
+}
+.itens-cardapio:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.5);
+}
+.img-cardapio-arredondado {
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
 
 /* cores-texto */
 .txt-orange-1 {
@@ -285,21 +332,6 @@ section .uma-fracao ion-icon {
 .txt-black-1 {
     color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Cores do materialize css*/
 .materialize-red {
