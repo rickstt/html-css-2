@@ -309,6 +309,101 @@ section .uma-fracao ion-icon {
     border-radius: 20px;
 }
 
+.tirar-marcador {
+    list-style: none;
+  }
+  .cat-cardapio {
+    padding: 10px 20px;
+    border: 1px solid silver;
+    border-radius: 30px;
+    margin: 10px 20px;
+  }
+  .cat-cardapio a {
+    font-family: Arial;
+    font-size: 12pt;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .itens-cardapio {
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px #666;
+    margin: 20px 10px;
+    padding: 10px;
+    transition: ease 0.5s;
+    cursor: pointer;
+  }
+  .img-cardapio-arredondado {
+    border-radius: 10px;
+  }
+  .itens-cardapio:hover {
+    margin-top: -10px;
+    box-shadow: 0px 10px 15px #666;
+    margin-bottom: 50px;
+  }
+  .scroll-x {
+    overflow: hidden;
+  }
+  .itens-em-linha {
+    display: inline-flex;
+    margin: 0 100px;
+  }
+  
+  .img-itens-cardapio {
+    width: 100%;
+    height: 160px;
+  }
+  
+  .form {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  .input-1 {
+    width: 100%;
+    padding: 10px;
+    font-size: 14pt;
+    display: block;
+    border: 1px solid silver;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  .textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    font-size: 14pt;
+    font-family: verdana;
+  }
+  .btn-enviar {
+    padding: 10px;
+    border: 0;
+    background-color: darkred;
+    color: #fff;
+    font-size: 14pt;
+    cursor: pointer;
+  }
+  
+  .pedido {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  .img-default-40 {
+    width: 40%;
+  }
+  .img-default-30 {
+    width: 30%;
+  }
+  .img-default-20 {
+    width: 20%;
+  }
+  
 
 
 
