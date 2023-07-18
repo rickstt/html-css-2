@@ -1,0 +1,35 @@
+/* Definir a media query junto com as dimensões */
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    header{
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+    header nav{
+        padding: 40px 10px 50px 5px;
+        height: 100vh;
+        width: 200px;
+        margin-left: -200px;
+    }
+
+    header .btn-mobile {
+        display: block;
+        color: #fff;
+        padding: 15px;
+    }
+    header .btn-mobile ion-icon {
+        width: 30px;
+        height: 30px;
+    }
+    header nav ul {
+        display: block;
+        text-align: left;
+    }
+    header nav ul li {
+        margin-bottom: 20px;
+    }
+    header nav ul li img {
+        display: none;
+    }
+}
