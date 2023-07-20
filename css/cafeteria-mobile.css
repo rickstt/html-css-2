@@ -51,8 +51,7 @@
 
     .em-linha {
         flex-direction: column;
-        margin-top: -90px;
-        margin-bottom: 40px;
+        margin-top: -40px;
     }
 
     .div-home img {
