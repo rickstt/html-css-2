@@ -11,6 +11,10 @@
         height: 100vh;
         width: 200px;
         margin-left: -200px;
+        background-color: rgba(163, 114, 81, 0.788);
+        z-index: 10000;
+        position: fixed;
+        top: 0px;
     }
 
     header .btn-mobile {
@@ -18,33 +22,44 @@
         color: #fff;
         padding: 15px;
     }
+
     header .btn-mobile ion-icon {
-        width: 30px;
-        height: 30px;
+        width: 38px;
+        height: 38px;
     }
+
+    .checkout {
+        position: fixed !important;
+    }
+    
     header nav ul {
         display: block;
         text-align: left;
     }
+
     header nav ul li {
         margin-bottom: 20px;
     }
+
     header nav ul li img {
         display: none;
     }
+
     .slogan {
-        margin-top: 0px;
-        font-size: 17pt;
-        position: absolute;
-        top: 100px;
+        display: none;
     }
+
     .em-linha {
         flex-direction: column;
+        margin-top: -90px;
+        margin-bottom: 40px;
     }
+
     .div-home img {
         width: 100%;
         height: 300px;
     }
+
     .img-remove-mobile {
         display: none;
     }
