@@ -32,4 +32,17 @@
     header nav ul li img {
         display: none;
     }
+    .slogan {
+        margin-top: 0px;
+        font-size: 17pt;
+        position: absolute;
+        top: 100px;
+    }
+    .em-linha {
+        flex-direction: column;
+    }
+    .div-home img {
+        width: 100%;
+        height: 300px;
+    }
 }

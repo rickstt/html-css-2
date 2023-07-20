@@ -35,6 +35,7 @@ header nav {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px 160px;
     text-align: center;
+    transition: ease 0.3s all;
 }
 
 header nav a {
