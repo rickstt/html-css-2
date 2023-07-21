@@ -289,12 +289,14 @@ section .uma-fracao ion-icon {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: ease 1s all;
 }
 .cat-cardapio ion-icon {
     color: rgb(196, 112, 34);
     width: 20px;
     height: 20px;
     padding-right: 8px;
+    transition: ease 1s all;
 }
 .itens-cardapio {
     transition: box-shadow .3s;
@@ -345,9 +347,9 @@ section .uma-fracao ion-icon {
     border-radius: 10px;
   }
   .itens-cardapio:hover {
-    margin-top: -10px;
+    margin-top: -1px;
     box-shadow: 0px 10px 15px #666;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .scroll-x {
     overflow: hidden;

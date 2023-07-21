@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/cafeteria.css">
     <link rel="stylesheet" href="css/cafeteria-mobile.css">
 </head>
-<body>
+<body onload="closeMenu()">
     <header>
         <a href="javascript:void" class="btn-mobile">
             <ion-icon name="menu-outline"></ion-icon>
@@ -40,31 +40,31 @@
         <div>
             <ul class="em-linha tirar-marcador">
                 <li class="cat-cardapio">
-                    <a href="javascript:void">
+                    <a href="javascript:void" onclick="mudarItem('cafes')">
                         <ion-icon name="cafe-outline"></ion-icon>
                         Coffee
                     </a>
                 </li>
                 <li class="cat-cardapio">
-                    <a href="javascript:void">
+                    <a href="javascript:void" onclick="mudarItem('bolos')">
                         <ion-icon name="server-outline"></ion-icon>
                         Cake
                     </a>
                 </li>
-                <li class="cat-cardapio">
+                <li class="cat-cardapio" onclick="mudarItem('doces')">
                     <a href="javascript:void">
                         <ion-icon name="ice-cream-outline"></ion-icon>
                         Candy
                     </a>
                 </li>
-                <li class="cat-cardapio">
+                <li class="cat-cardapio" onclick="mudarItem('salgados')">
                     <a href="javascript:void">
                         <ion-icon name="pizza-outline"></ion-icon>
                         Snack
                     </a>
                 </li>
                 <li class="cat-cardapio">
-                    <a href="javascript:void">
+                    <a href="javascript:void" onclick="mudarItem('bebidas')">
                         <ion-icon name="wine-outline"></ion-icon>
                         Drink
                     </a>
@@ -130,7 +130,7 @@
             </div>
         </section>
 
-        <section id="bolo" class="em-linha">
+        <section id="bolos" class="em-linha">
             <div class="itens-cardapio">
                 <img class="img-default img-cardapio-arredondado" src="img/bolo3.jpg" alt="Bolo de cenoura com gotas">
                 <h4 class="sub-h3">Carrot Cake</h4>
