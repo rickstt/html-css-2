@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button id="ativar">
+        Clique aqui para ativar o loading
+    </button>
+
+    <button id="desativar">
+        Clique para desativar o loading
+    </button>
+
+    <button id="reiniciar">Clique aqui para reiniciar o loading</button>
+
+    
+    <div id="caixa"></div> -->
+
+    <div id="img"><img src="img/bebida.jpg" alt=""></div>
+
+    <script>
+        // let v = 0;
+        // let b = 0;
+        // let i;
+        // function contar() {
+        //     v++;
+        //     b = v * 5;
+        //     console.log(v)
+
+        //     document.body.style.backgroundColor = `rgb(255,${v},${b})`;
+        //     console.log(`rgb(255,${v},${b})`)
+
+        //     if(b>250){
+        //         window.clearInterval(i);
+        //     }
+        // }
+        // i = window.setInterval(contar, 500);
+
+
+        // let tm = 0;
+        // let it;
+        // function alterarCaixa() {
+        //     document.querySelector("#caixa").style.width=tm+"px";
+        //     tm+=2;
+        // }
+        // document.querySelector("#desativar").onclick = () => {
+        //      window.clearInterval(it);
+        // }
+
+        // document.querySelector("#ativar").onclick = () => {
+        //     it = window.setInterval(alterarCaixa,50);
+        // }
+
+        // document.querySelector("#reiniciar").onclick = () => {
+        //     if(tm>1){
+        //         window.clearInterval(it);
+        //         document.querySelector("#caixa").style.width=tm=0;
+        //     }
+        // };
+
+        let pt = 0;
+        let direcao = 0;
+        let it = window.setInterval(() => {
+            if (direcao == 0){
+                document.querySelector("#img").style.left = pt + "px";
+                pt+=20;
+                if(document.querySelector("#img").style.left == "800px"){
+                    direcao = 1;
+                }   
+            } 
+            else {
+                document.querySelector("#img").style.left = pt + "px";
+                pt-=20;
+                if(document.querySelector("#img").style.left  == "0px"){
+                    direcao = 0
+                }
+            }
+        }, 50)
+        document.querySelector("#img").onmousehover = () => {
+            window.clearInterval(direcao)
+        }
+    </script>
+</body>
+
+</html>
