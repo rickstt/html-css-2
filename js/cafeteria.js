@@ -1,3 +1,7 @@
+//Variável com o conteúdo inicial cafés para a rolagem dos itens do cardápio
+let tp = "#cafes";
+
+
 document.getElementsByClassName("btn-mobile")[0].onclick = () => {
     document.getElementsByTagName("nav")[0].style.marginLeft = "0px";
 };
@@ -15,11 +19,13 @@ function mudarItem(cat) {
             document.getElementById(cat).style.display = "inline-flex";
             document.getElementById("bolos").style.display = "none";
             trocarSelecao(cat);
+            tp = "#cafes";
             break;
         case "bolos":
             document.getElementById(cat).style.display = "inline-flex";
             document.getElementById("cafes").style.display = "none";
             trocarSelecao(cat);
+            tp = "#bolos";
             break;
         /*
         case "doces":
@@ -98,11 +104,24 @@ document.body.onmousemove = () => {
     let px = window.event.clientX; //Pegar a posição horizontal do mouse
 
     if (px > metadeTela) {
-        document.querySelector("section").style.marginLeft = -pos + "px";
-        pos-=5;
+        if (document.querySelector(tp).style.marginLeft == "-360px") {
+            document.querySelector(tp).style.marginLeft = "-360px"
+        }
+        else {
+            document.querySelector(tp).style.marginLeft = pos + "px";
+            pos -= 5;
+        }
     }
     else {
-        document.querySelector("section").style.marginLeft = pos + "px";
-        pos+=5;
+        if (document.querySelector(tp).style.marginLeft == "15px") {
+            document.querySelector(tp).style.marginLeft = "15px"
+        }
+        else {
+            document.querySelector(tp).style.marginLeft = pos + "px";
+            pos += 5;
+        }
+
     }
+
+    console.log(document.querySelector("section").style.marginLeft)
 }

@@ -239,6 +239,7 @@ a .balao {
 .img-default {
     width: 100%;
     border-radius: 30px;
+    height: 150px;
 }
 .margem-10px{
     margin: 10px;
@@ -299,7 +300,6 @@ section .uma-fracao ion-icon {
     transition: ease 1s all;
 }
 .itens-cardapio {
-    transition: box-shadow .3s;
     width: 250px;
     height: 310px;
     border-radius: 20px;
@@ -312,7 +312,7 @@ section .uma-fracao ion-icon {
 .itens-cardapio:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.5);
 }
-.img-cardapio-arredondado {
+.img-cardapio-arredondado{
     border-radius: 20px;
 }
 
