@@ -73,7 +73,8 @@
 
         let pt = 0;
         let direcao = 0;
-        let it = window.setInterval(() => {
+        function mov() {
+             
             if (direcao == 0){
                 document.querySelector("#img").style.left = pt + "px";
                 pt+=20;
@@ -88,7 +89,15 @@
                     direcao = 0
                 }
             }
-        }, 50)
+            }
+        let it = window.setInterval(mov, 50);
+
+        document.querySelector("#img").onmouseover = () => {
+            window.clearInterval(it);
+        }
+        document.querySelector("#img").onmouseout = () => {
+            it = window.setInterval(mov, 50)
+        }
 
     </script>
 </body>
